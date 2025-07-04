@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    .swiper-wrapper {
+      transition-timing-function: linear !important;
+    }
+  </style>
+</head>
+
+<body class="font-inter">
+  <main>
+    <header>
+      <nav class="sticky top-[0px] z-1">
+        <div class="bg-white shadow-base-shadow py-1 md:py-3 lg:py-4">
+          <div class="container flex items-center justify-between">
+            <div class="flex items-center">
+              <a href="#">
+                <img src="./assets/images/logo.png" width="64" alt="Hira-Painting-Logo" />
+              </a>
+            </div>
+
+            <div class="hidden lg:flex flex-1 items-center justify-end gap-[82px]">
+              <div class="flex space-x-[34px] text-xl leading-7 font-medium text-main">
+                <a href="#" class="hover:text-orange-500">About us</a>
+                <a href="#" class="hover:text-orange-500">Services</a>
+                <a href="tel:6479753077" class="font-bold text-main ml-[38px]">647-975-3077</a>
+              </div>
+
+              <div class="flex items-center space-x-13">
+                <!-- Social icons -->
+                <div class="flex items-center space-x-2 text-primary">
+                  <a href="#" aria-label="LinkedIn"><img src="./assets/icons/linkedin.svg" alt="LinkedIn"
+                      target="_blank" /></a>
+                  <a href="#" aria-label="Facebook" target="_blank"><img src="./assets/icons/fb.svg"
+                      alt="Facebook" /></a>
+                  <a href="#" aria-label="Isntagram" target="_blank"><img src="./assets/icons/instagram.svg"
+                      alt="Isntagram" /></a>
+                </div>
+
+                <!-- Button -->
+                <a href="#"
+                  class="bg-orange-400 hover:bg-orange-500 text-white text-sm font-semibold py-4 px-6 rounded-full transition">
+                  Get free quote
+                </a>
+              </div>
+            </div>
+
+            <div class="ml-auto my-auto block lg:hidden pr-4">
+              <button id="mobile-menu-button" class="cursor-pointer group" aria-expanded="false"
+                aria-controls="mobile-menu" aria-label="Toggle mobile menu">
+                <div
+                  class="top-0 bg-primary rounded-full w-8 h-1 mt-1 group-open:rotate-45 transition-all group-open:top-2 relative">
+                </div>
+                <div class="opacity-100 bg-primary rounded-full w-8 h-1 mt-1 transition-all group-open:opacity-0"></div>
+                <div
+                  class="top-0 bg-primary rounded-full w-8 h-1 mt-1 group-open:-rotate-45 transition-all group-open:-top-2 relative">
+                </div>
+              </button>
+
+              <div class="absolute top-full w-full left-0 bg-white z-50 h-screen peer-open:block hidden py-5">
+                <div class="container">
+                  <div class="flex flex-col space-y-4 text-base leading-5 font-medium text-main">
+                    <a href="#" class="hover:text-orange-500">About us</a>
+                    <a href="#" class="hover:text-orange-500">Services</a>
+                    <a href="#" class="font-bold text-main mt-[18px]">647-975-3077</a>
+                    <div class="flex items-center space-x-2 text-primary">
+                      <a href="#"><img src="./assets/icons/linkedin.svg" alt="" /></a>
+                      <a href="#"><img src="./assets/icons/fb.svg" alt="" /></a>
+                      <a href="#"><img src="./assets/icons/instagram.svg" alt="" /></a>
+                    </div>
+
+                    <a href="#"
+                      class="bg-primary text-center hover:bg-orange-500 text-white text-sm font-semibold py-2 px-5 rounded-full transition">
+                      Get free quote
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="hidden md:flex flex-1 items-center justify-end">
+                <div class="menu-item">
+                  <span>Home</span>
+                </div>
+                <div class="menu-item">
+                  <span>Lineup</span>
+                </div>
+                <div class="menu-item group">
+                  <span>Tickets</span>
+                  <div
+                    class="hidden absolute top-full right-0 bg-pink-500 whitespace-nowrap rounded-b-md text-right group-hover:block"
+                  >
+                    <div class="submenu-item">
+                      <span>Single day ticket</span>
+                    </div>
+                    <div class="submenu-item">
+                      <span>7 day ticker</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <span>Support</span>
+                </div>
+              </div> -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero pb-6 md:pb-12 lg:pb-[100px]">
+      <div class="min-h-[400px] py-6 md:py-12 xl:py-[80px]">
+        <div class="container">
+          <div class="mb-4 md:mb-[52px] xl:mb-[80px] flex flex-col md:flex-row md:items-center gap-3 md:gap-4 xl:gap-5">
+            <h1
+              class="flex-1 xl:min-w-[760px] xl:flex-auto text-[56px] leading-17 xl:text-[120px] xl:leading-31 text-main font-anton font-normal">
+              WE ARE EXPERTS <br />
+              IN PAINTING
+            </h1>
+            <p
+              class="flex-1 xl:flex-auto xl:self-end md:self-center text-base xl:text-2xl leading-6 xl:leading-7 text-main">
+              We provide high-quality interior and exterior wall painting
+              services for homes, offices, and commercial spaces. With expert
+              painters and top-grade materials, we deliver smooth and lasting
+              results.
+            </p>
+          </div>
+          <div>
+            <img src="./assets/images/home-paint.png" alt="Painter painting an orange wall" width="100%" height="100%"
+              class="h-56 md:h-96 lg:h-[584px]" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper flex">
+            <article class="swiper-slide !w-auto">
+              <div class="carousel-item">
+                Interior House Painting
+                <img src="./assets/icons/star.svg" alt="star icon" width="32" height="32"
+                  class="w-8 h-8 block md:w-11 md:h-11" />
+              </div>
+            </article>
+            <article class="swiper-slide !w-auto">
+              <div class="carousel-item">
+                Interior House Painting
+                <img src="./assets/icons/star.svg" alt="star icon" width="32" height="32"
+                  class="w-8 h-8 block md:w-11 md:h-11" />
+              </div>
+            </article>
+            <article class="swiper-slide !w-auto">
+              <div class="carousel-item">
+                Interior House Painting
+                <img src="./assets/icons/star.svg" alt="star icon" width="32" height="32"
+                  class="w-8 h-8 block md:w-11 md:h-11" />
+              </div>
+            </article>
+            <article class="swiper-slide !w-auto">
+              <div class="carousel-item">
+                Interior House Painting
+                <img src="./assets/icons/star.svg" alt="star icon" width="32" height="32"
+                  class="w-8 h-8 block md:w-11 md:h-11" />
+              </div>
+            </article>
+            <article class="swiper-slide !w-auto">
+              <div class="carousel-item">
+                Interior House Painting
+                <img src="./assets/icons/star.svg" alt="star icon" width="32" height="32"
+                  class="w-8 h-8 block md:w-11 md:h-11" />
+              </div>
+            </article>
+            <article class="swiper-slide !w-auto">
+              <div class="carousel-item">
+                Interior House Painting
+                <img src="./assets/icons/star.svg" alt="star icon" width="32" height="32"
+                  class="w-8 h-8 block md:w-11 md:h-11" />
+              </div>
+            </article>
+            <article class="swiper-slide !w-auto">
+              <div class="carousel-item">
+                Interior House Painting
+                <img src="./assets/icons/star.svg" alt="star icon" width="32" height="32"
+                  class="w-8 h-8 block md:w-11 md:h-11" />
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black">
+      <div class="container py-16">
+        <h2 class="text-white  mb-9  md:mb-[64px] lg:mb-[100px]">OUR SERVICES</h2>
+
+        <div class="mb-16 lg:mb-[100px]   grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 ">
+
+          <article class="service-card">
+            <div class="h-[100px] w-[100px] lg:w-[120px] lg:h-[120px] rounded-full">
+              <img src="./assets/images/interior-house.png" alt="Interior painting service icon" width="100%"
+                height="100%" class="w-full h-full rounded-full" />
+            </div>
+            <h3 class="text-center text-[32px] leading-[40px] font-medium text-main mb-5">
+              Interior House <br> Painting
+            </h3>
+
+            <a aria-label="Get a free quote for Interior House Painting service" href="#"
+              class="bg-primary text-center hover:bg-orange-500 text-white text-sm font-semibold py-[14px] px-6 rounded-full transition">
+              Get free quote
+            </a>
+
+          </article>
+
+          <article class="service-card">
+            <div class="h-[100px] w-[100px] lg:w-[120px] lg:h-[120px] rounded-full">
+              <img src="./assets/images/commercial-painting.png" alt="Commercial painting service icon" width="100%"
+                height="100%" class="w-full h-full rounded-full" />
+            </div>
+            <h3 class="text-center text-[32px] leading-[40px] font-medium text-main mb-5">
+              Commercial <br> Painting
+            </h3>
+
+            <a aria-label="Get a free quote for Commercial Painting service" href="#"
+              class="bg-primary text-center hover:bg-orange-500 text-white text-sm font-semibold py-[14px] px-6 rounded-full transition">
+              Get free quote
+            </a>
+
+          </article>
+
+          <article class="service-card">
+            <div class="h-[100px] w-[100px] lg:w-[120px] lg:h-[120px] rounded-full">
+              <img src="./assets/images/exterior-house.png" alt="Exterior House painting service icon" width="100%"
+                height="100%" class="w-full h-full rounded-full" />
+            </div>
+            <h3 class="text-center text-[32px] leading-[40px] font-medium text-main mb-5">
+              Exterior House <br> Painting
+            </h3>
+
+            <a aria-label="Get a free quote for Exterior House  Painting service" href="#"
+              class="bg-primary text-center hover:bg-orange-500 text-white text-sm font-semibold py-[14px] px-6 rounded-full transition">
+              Get free quote
+            </a>
+
+          </article>
+
+        </div>
+        <div class="text-center"> <a href="#" aria-label="View the complete list of all our painting services"
+            class="bg-black text-center border-1  border-white text-white text-base leading-6 font-normal py-4 px-[60px] rounded-full transition mx-auto">
+            View all services
+          </a> </div>
+
+    </section>
+
+    <section class="bg-white  py-16  md:pb-[100px] lg:pt-[100px] pb-[140px]">
+      <div class="container">
+
+        <h2 class="mb-12 lg:mb-[80px]">WHY WORK WITH US?</h2>
+        <div class="grid grid-rows-1 md:grid-cols-2  gap-4 md:gap-6">
+
+          <div class="bg-black rounded-[64px] p-9 lg:p-11 md:p-10 text-white  relative overflow-visible">
+            <div class="flex gap-3 relative">
+              <div
+                class="bg-white text-black font-bold rounded-full w-10 h-10 flex items-center justify-center text-[32px] leading-10">
+                1</div>
+              <img src="./assets/icons/yellow-arrow.svg" alt="Yellow Arrow">
+            </div>
+            <h3 class="text-2xl leading-8 md:text-[32px] md:leading-10 font-bold text-center mt-2">Professional work
+            </h3>
+            <p class="max-w-[480px] mx-auto mt-6 lg:mt-9 text-base leading-6 text-center ">
+              Our painting contractors use the highest quality paints, materials and advanced techniques in brush,
+              roller and spray-painting to deliver the best results, every time. You can rest assured our 13 years of
+              experience and professionalism will deliver exactly what you need.
+            </p>
+          </div>
+          <div class="bg-black rounded-[64px] p-9 lg:p-11 md:p-10 text-white  relative overflow-visible">
+            <div class="flex gap-3 relative">
+              <div
+                class="bg-white text-black font-bold rounded-full w-10 h-10 flex items-center justify-center text-[32px] leading-10">
+                2</div>
+              <img src="./assets/icons/yellow-arrow.svg" alt="Yellow Arrow">
+            </div>
+            <h3 class="text-2xl leading-8 md:text-[32px] md:leading-10 font-bold text-center mt-2">Reliable & Fast
+              Service</h3>
+            <p class="max-w-[480px] mx-auto mt-6 lg:mt-9 text-base leading-6 text-center ">
+              We offer a reliable service to brighten up your space. No patchy paintwork, no floor stains, just a
+              stunning paint job using the colours of your choice. Our master painters work quickly, quietly and
+              professionally.
+            </p>
+          </div>
+          <div class="bg-black rounded-[64px] p-9 lg:p-11 md:p-10 text-white  relative overflow-visible">
+            <div class="flex gap-3 relative">
+              <div
+                class="bg-white text-black font-bold rounded-full w-10 h-10 flex items-center justify-center text-[32px] leading-10">
+                3</div>
+              <img src="./assets/icons/yellow-arrow.svg" alt="Yellow Arrow">
+            </div>
+            <h3 class="text-2xl leading-8 md:text-[32px] md:leading-10 font-bold text-center mt-2">100% Guarantee of
+              Satisfaction</h3>
+            <p class="max-w-[480px] mx-auto mt-6 lg:mt-9 text-base leading-6 text-center ">
+              Our Guarantee lasts 24 months from the completion of your project (or 12 months for fences, decks and
+              railings). It covers premature project failure due to defects in application (that is, preparation and
+              painting).  </p>
+          </div>
+          <div class="bg-black rounded-[64px] p-9 lg:p-11 md:p-10 text-white  relative overflow-visible">
+            <div class="flex gap-3 relative">
+              <div
+                class="bg-white text-black font-bold rounded-full w-10 h-10 flex items-center justify-center text-[32px] leading-10">
+                4</div>
+              <img src="./assets/icons/yellow-arrow.svg" alt="Yellow Arrow">
+            </div>
+            <h3 class="text-2xl leading-8 md:text-[32px] md:leading-10 font-bold text-center mt-2">Competitive
+              estimation</h3>
+            <p class="max-w-[480px] mx-auto mt-6 lg:mt-9 text-base leading-6 text-center ">
+              Get a free painting estimate from our professional painters at Hira Painting! All of our painters are
+              passionate about what they do. As a company, we pride ourselves on delivering the best customer service to
+              each and every one of our clients. </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black py-16 ">
+      <div class="container">
+        <h2 class="text-white mb-6 md:mb-16 lg:mb-[100px]">OUR PROJECTS</h2>
+        <div class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div class="aspect-[4/3] overflow-hidden"> <img src="./assets/images/projects/project-1.png"  alt="Living room with fresh painting - project 1" class="max-h-[360px] object-cover rounded-t-[64px] lg:rounded-tr-none"  width="100%" height="100%"></div>
+          <div class="aspect-[4/3] overflow-hidden">   <img src="./assets/images/projects/project-2.png"   alt="Modern interior wall paint - project 2" class="max-h-[360px] object-cover  md:rounded-t-[64px] lg:rounded-t-none"  width="100%" height="100%"> </div>
+          <div class="aspect-[4/3] overflow-hidden">    <img src="./assets/images/projects/project-3.png"  alt="Kitchen area painted in neutral tones - project 3"class="max-h-[360px] object-cover rounded-tr-none  lg:rounded-tr-[64px]" width="100%" height="100%"> </div>
+          <div class="aspect-[4/3] overflow-hidden"><img src="./assets/images/projects/project-4.png"   alt="Hallway painted in light grey - project 4" class="max-h-[360px] object-cover  rounded-b-[64px]  md:rounded-b-none" width="100%" height="100%">  </div>
+          <div class="aspect-[4/3] overflow-hidden">  <img src="./assets/images/projects/project-5.png"  alt="Bedroom with large window painted freshly - project 5" class="max-h-[360px] object-cover hidden md:block" width="100%" height="100%">  </div>
+          <div class="aspect-[4/3] overflow-hidden"> <img src="./assets/images/projects/project-6.png" alt="Interior detail with warm lighting - project 6" class="max-h-[360px] object-cover hidden md:block" width="100%" height="100%"> </div>
+          <div class="aspect-[4/3] overflow-hidden">  <img src="./assets/images/projects/project-7.png"  alt="Grey painted interior wall - project 7" class="max-h-[360px] object-cover hidden md:block" width="100%" height="100%"> </div>
+          <div class="aspect-[4/3] overflow-hidden">   <img src="./assets/images/projects/project-8.png"  alt="Staircase wall freshly painted - project 8"class="max-h-[360px] object-cover hidden md:block  " width="100%" height="100%"> </div>
+          <div class="aspect-[4/3] overflow-hidden">   <img src="./assets/images/projects/project-9.png"  alt="Ceiling and wall paint in open concept room - project 9" class="max-h-[360px] object-cover hidden lg:block" width="100%" height="100%"> </div>
+        
+          
+        
+          
+         
+        
+        
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    window.onload = function() {
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function() {
+          document
+            .getElementById("mobile-menu-button")
+            .classList.toggle("open");
+          const open = document
+            .getElementById("mobile-menu-button")
+            .classList.contains("open");
+          document.body.style.overflow = open ? "hidden" : "auto";
+        });
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      speed: 4000, // daha yavaş və axıcı effekt üçün yüksək dəyər
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      freeMode: true,
+      freeModeMomentum: false,
+      grabCursor: false,
+    });
+  </script>
+</body>
+
+</html>
