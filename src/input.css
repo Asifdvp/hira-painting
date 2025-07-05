@@ -89,3 +89,9 @@
     @slot;
   }
 }
+
+@custom-variant peer-open {
+  &:is(:where(.peer):is(.open, [open], :popover-open, :open) ~ *) {
+    @slot;
+  }
+}
