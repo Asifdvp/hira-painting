@@ -15,8 +15,9 @@
     font-weight: bold;
   }
   h1 {
-    @apply text-6xl;
     font-weight: bold;
+    font-family: var(--font-anton);
+    @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px];
   }
   h2 {
     @apply text-5xl;
@@ -45,6 +46,7 @@
 @theme {
   --color-primary: #ff9a00;
   --color-main: #010032;
+  --color-primary-hover:#F59005;
   --shadow-base-shadow: 0px 8px 20px 0px rgba(148, 148, 148, 0.25);
   --font-anton: "Anton", sans-serif;
   --font-inter: "Inter", serif;
