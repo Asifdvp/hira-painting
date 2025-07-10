@@ -45,8 +45,11 @@
 
 @theme {
   --color-primary: #ff9a00;
+  --color-darkPurple: #311f40;
+  --color-grey: #efefef;
+  --color-mainGrey: #7b7b7b;
   --color-main: #010032;
-  --color-primary-hover:#F59005;
+  --color-primary-hover: #f59005;
   --shadow-base-shadow: 0px 8px 20px 0px rgba(148, 148, 148, 0.25);
   --font-anton: "Anton", sans-serif;
   --font-inter: "Inter", serif;
@@ -84,6 +87,12 @@
   .service-card {
     @apply rounded-t-[64px] bg-white p-10 lg:p-12 flex flex-col items-center gap-5 justify-between;
   }
+  .input {
+    @apply bg-white box-border w-full rounded-[100px] focus:outline-none border-[1.5px] border-darkPurple placeholder-mainGrey text-base leading-6 py-[10px] px-13;
+  }
+  .order-input {
+    @apply bg-white box-border w-full rounded-[100px] focus:outline-none  border-darkPurple placeholder-mainGrey text-base leading-6 py-[12px] px-13;
+  }
 }
 
 @custom-variant group-open {
@@ -96,4 +105,9 @@
   &:is(:where(.peer):is(.open, [open], :popover-open, :open) ~ *) {
     @slot;
   }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
