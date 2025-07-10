@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../dist/output.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <style>
     .swiper-wrapper {
@@ -20,14 +20,14 @@
         <div class="bg-white shadow-base-shadow py-1 md:py-3 lg:py-4">
           <div class="container flex items-center justify-between">
             <div class="flex items-center">
-              <a href="/">
+              <a href="./index.html">
                 <img src="./assets/images/logo.png" width="64" alt="Hira-Painting-Logo">
               </a>
             </div>
             <div class="hidden lg:flex flex-1 items-center justify-end gap-[82px]">
               <div class="flex space-x-[34px] text-xl leading-7 font-medium text-main">
-                <a href="./pages/about.html" class="hover:text-primary-hover">About us</a>
-                <a href="./pages/services.html" class="hover:text-primary-hover">Services</a>
+                <a href="./about.html" class="hover:text-primary-hover">About us</a>
+                <a href="./services.html" class="hover:text-primary-hover">Services</a>
                 <a href="tel:6479753077" class="font-bold text-main ml-[38px]">647-975-3077</a>
               </div>
               <div class="flex items-center space-x-13">
@@ -44,7 +44,7 @@
                   </a>
                 </div>
 
-                <a href="#" aria-label="Get a free painting quote"
+                <a href="./order.html" aria-label="Get a free painting quote"
                   class="bg-orange-400 hover:bg-primary text-white text-sm font-semibold py-4 px-6 rounded-full transition">
                   Get free quote
                 </a>
@@ -64,8 +64,8 @@
               <div class="absolute top-full w-full left-0 bg-white z-50 h-screen hidden  peer-open:block py-5">
                 <div class="container">
                   <div class="flex flex-col space-y-4 text-base leading-5 font-medium text-main">
-                    <a href="./pages/about.html" class="hover:text-primary-hover">About us</a>
-                    <a href="./pages/services.html" class="hover:text-primary-hover">Services</a>
+                    <a href="./about.html" class="hover:text-primary-hover">About us</a>
+                    <a href="./services.html" class="hover:text-primary-hover">Services</a>
                     <a href="tel:6479753077" class="font-bold text-main mt-[18px]">647-975-3077</a>
                     <div class="flex items-center space-x-2 text-primary">
                       <a href="#" aria-label="LinkedIn" rel="noopener noreferrer">
@@ -78,7 +78,7 @@
                         <img src="./assets/icons/instagram.svg" alt="Instagram">
                       </a>
                     </div>
-                    <a aria-label="Get a free painting quote" href="#"
+                    <a aria-label="Get a free painting quote" href="./order.html"
                       class="bg-primary text-center hover:bg-primary-hover text-white text-sm font-semibold py-2 px-5 rounded-full transition">
                       Get free quote
                     </a>
@@ -201,7 +201,7 @@
               <br>
               Painting
             </h3>
-            <a aria-label="Get a free quote for Interior House Painting service" href="#"
+            <a aria-label="Get a free quote for Interior House Painting service" href="./order.html?service=Interior%20House%20Painting"
               class="bg-primary text-center hover:bg-primary-hover text-white text-sm font-semibold py-[14px] px-6 rounded-full transition">
               Get free quote
             </a>
@@ -217,7 +217,7 @@
               <br>
               Painting
             </h3>
-            <a aria-label="Get a free quote for Commercial Painting service" href="#"
+            <a aria-label="Get a free quote for Commercial Painting service" href="./order.html?service=Commercial%20Painting"
               class="bg-primary text-center hover:bg-primary-hover text-white text-sm font-semibold py-[14px] px-6 rounded-full transition">
               Get free quote
             </a>
@@ -233,14 +233,14 @@
               <br>
               Painting
             </h3>
-            <a aria-label="Get a free quote for Interior House Painting service" href="#"
+            <a aria-label="Get a free quote for Interior House Painting service" href="./order.html?service=Exterior%20House%20Painting"
               class="bg-primary hover:bg-primary-hover text-center  text-white text-sm font-semibold py-[14px] px-6 rounded-full transition">
               Get free quote
             </a>
           </article>
         </div>
         <div class="text-center">
-          <a href="#" aria-label="View full list of painting services"
+          <a href="./services.html" aria-label="View full list of painting services"
             class="hover:bg-white hover:text-black  duration-300 bg-black text-center border-1  border-white text-white text-base leading-6 font-normal py-4 px-[60px] rounded-full transition mx-auto">
             View all services
           </a>
@@ -486,14 +486,11 @@
   <footer class="bg-white ">
     <div class="container border-t border-[#3E3D3D66]/60 py-4 md:py-5 text-black text-[12px] leading-5 font-bold">
  <div class="flex flex-col md:flex-row justify-between  items-start md:items-center gap-4">
-    <!-- Left Links -->
     <div class="flex flex-wrap items-center gap-7 ">
       <a href="#" class="hover:underline">Privacy policy</a>
       <a href="#" class="hover:underline">Trust & safety</a>
       <a href="#" class="hover:underline">Terms of use</a>
     </div>
-
-    <!-- Right Copyright -->
     <div class=" flex items-center  gap-2">
       <span>©</span>
       <span>2024 Hira Painting</span>
@@ -503,28 +500,13 @@
  
 </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    window.onload = function () {
-      document
-        .getElementById("mobile-menu-button")
-        .addEventListener("click", function () {
-          document
-            .getElementById("mobile-menu-button")
-            .classList.toggle("open");
-          const open = document
-            .getElementById("mobile-menu-button")
-            .classList.contains("open");
-          document.body.style.overflow = open ? "hidden" : "auto";
-        });
-    };
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js" type="module"></script>
   <script>
     const swiper = new Swiper(".mySwiper", {
       loop: true,
       slidesPerView: "auto",
       spaceBetween: 24,
-      speed: 4000, // daha yavaş və axıcı effekt üçün yüksək dəyər
+      speed: 4000, 
       autoplay: {
         delay: 0,
         disableOnInteraction: false,
@@ -535,5 +517,4 @@
     });
   </script>
 </body>
-
 </html>
