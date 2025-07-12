@@ -8,6 +8,7 @@
     font-weight: bold;
   }
   h1 {
+    font-size: 56px;
     font-weight: bold;
     font-family: var(--font-anton);
     @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px];
