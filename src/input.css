@@ -3,7 +3,16 @@
 @source "./";
 
 
+@layer base{
+  h1{
+   @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold
 
+  }
+  h2{
+   @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold
+
+  }
+}
 
 @theme {
   --color-primary: #ff9a00;
@@ -35,12 +44,12 @@
 }
 
 @layer components {
-  .heading-1 {
+  . {
     @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold
   }
 
-  .heading-2 {
-    @apply text-5xl text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold;
+  .{
+   
   }
 
   .menu-item {
