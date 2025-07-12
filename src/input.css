@@ -1,48 +1,18 @@
 @import './styles/fonts.css';
 @import "tailwindcss" source(none);
 
-
-
-
 @source "./";
 
-/* @layer base {
-  body {
-    font-family: "Quicksand", serif;
-  }
-} */
 
 @layer base {
-  h {
-    font-weight: bold;
-  }
   h1 {
-    font-weight: bold;
-    font-family: var(--font-anton);
-    @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px];
+  
+    @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold;
   }
   h2 {
-    @apply text-5xl;
-    font-weight: bold;
-    font-family: var(--font-anton);
-    @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px];
+    @apply text-5xl text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold;
   }
-  h3 {
-    @apply text-4xl;
-    font-weight: bold;
-  }
-  h4 {
-    @apply text-3xl;
-    font-weight: bold;
-  }
-  h5 {
-    @apply text-2xl;
-    font-weight: bold;
-  }
-  h6 {
-    @apply text-xl;
-    font-weight: bold;
-  }
+
 }
 
 @theme {
@@ -109,7 +79,4 @@
   }
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
-}
+
