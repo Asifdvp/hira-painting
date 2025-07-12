@@ -3,14 +3,14 @@
 @source "./";
 
 
-@layer base{
-  h1{
-   @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold
-
+@layer base {
+  h1 {
+    @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold;
+    font-size: 56px;
   }
-  h2{
-   @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold
-
+  h2 {
+    @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold;
+    font-size: 56px;
   }
 }
 
