@@ -1,19 +1,9 @@
 @import './styles/fonts.css';
 @import "tailwindcss" source(none);
-
 @source "./";
 
 
-@layer base {
-  h1 {
-  
-    @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold;
-  }
-  h2 {
-    @apply text-5xl text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold;
-  }
 
-}
 
 @theme {
   --color-primary: #ff9a00;
@@ -28,6 +18,7 @@
   --animate-wavey: wavey 1000ms linear infinite;
 
   @keyframes wavey {
+
     0%,
     100% {
       transform: scaleY(0.5);
@@ -44,26 +35,40 @@
 }
 
 @layer components {
+  .heading-1 {
+    @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold
+  }
+
+  .heading-2 {
+    @apply text-5xl text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px] font-anton font-bold;
+  }
+
   .menu-item {
     @apply relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 hover:text-zinc-200 hover:bg-white/10 transition-colors duration-500 ease-in-out;
   }
+
   .submenu-item {
     @apply p-4 font-bold hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer;
   }
+
   .container {
     @apply max-w-[1312px] px-4 md:px-6 mx-auto 2xl:px-0;
   }
+
   .carousel-item {
-    @apply font-anton text-2xl leading-[100%] flex gap-4 md:gap-6 md:text-[44px]  text-main items-center;
+    @apply font-anton text-2xl leading-[100%] flex gap-4 md:gap-6 md:text-[44px] text-main items-center;
   }
+
   .service-card {
     @apply rounded-t-[64px] bg-white p-10 lg:p-12 flex flex-col items-center gap-5 justify-between;
   }
+
   .input {
     @apply bg-white box-border w-full rounded-[100px] focus:outline-none border-[1.5px] border-darkPurple placeholder-mainGrey text-base leading-6 py-[10px] px-13;
   }
+
   .order-input {
-    @apply bg-white box-border w-full rounded-[100px] focus:outline-none  border-darkPurple placeholder-mainGrey text-base leading-6 py-[12px] px-13;
+    @apply bg-white box-border w-full rounded-[100px] focus:outline-none border-darkPurple placeholder-mainGrey text-base leading-6 py-[12px] px-13;
   }
 }
 
@@ -78,5 +83,3 @@
     @slot;
   }
 }
-
-
