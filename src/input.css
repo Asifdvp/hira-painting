@@ -10,10 +10,9 @@
   h1 {
     font-weight: bold;
     font-family: var(--font-anton);
-    @apply text-[56px] !lg:text-[120px] leading-[70px] lg:leading-[124px];
+    @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px];
   }
   h2 {
-    @apply text-5xl;
     font-weight: bold;
     font-family: var(--font-anton);
     @apply text-[56px] lg:text-[120px] leading-[70px] lg:leading-[124px];
