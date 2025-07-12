@@ -382,6 +382,9 @@
   .aspect-\[4\/3\] {
     aspect-ratio: 4/3;
   }
+  .aspect-\[612\/340\] {
+    aspect-ratio: 612/340;
+  }
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
@@ -625,6 +628,9 @@
   }
   .overflow-visible {
     overflow: visible;
+  }
+  .rounded {
+    border-radius: 0.25rem;
   }
   .rounded-\[32px\] {
     border-radius: 32px;
@@ -1118,6 +1124,11 @@
       display: inline-block;
     }
   }
+  .md\:aspect-\[612\/300\] {
+    @media (width >= 48rem) {
+      aspect-ratio: 612/300;
+    }
+  }
   .md\:h-11 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 11);
@@ -1449,6 +1460,16 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:aspect-\[584\/250\] {
+    @media (width >= 64rem) {
+      aspect-ratio: 584/250;
+    }
+  }
+  .lg\:aspect-\[612\/250\] {
+    @media (width >= 64rem) {
+      aspect-ratio: 612/250;
     }
   }
   .lg\:h-\[120px\] {
