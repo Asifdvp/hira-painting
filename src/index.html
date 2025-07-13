@@ -21,9 +21,9 @@
 
   <!-- Favicon -->
   <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch.webp">
+  <link rel="icon" type="image/webp" sizes="32x32" href="/32x32.webp">
+  <link rel="icon" type="image/webp" sizes="16x16" href="/32x32.webp">
 
 
   <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
@@ -44,12 +44,7 @@
 
   <!-- Styles -->
 
-
-
-  <!-- Tailwind output.css üçün -->
 <link rel="stylesheet" href="./output.css">
-
-<!-- Swiper CSS üçün -->
 <link rel="preload" href="./styles/swipper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="./styles/swipper-bundle.min.css"></noscript>
  
@@ -95,12 +90,12 @@
 <body class="font-inter">
   <main>
     <header>
-      <nav class="sticky top-[0px] z-1">
+      <nav class="sticky top-[0px]" style="z-index: 10;">
         <div class="bg-white shadow-base-shadow py-1 md:py-3 lg:py-4">
           <div class="container flex items-center justify-between">
             <div class="flex items-center">
               <a href="./index.html">
-                <img src="./apple-touch.png" width="64" alt="Hira-Painting-Logo">
+                <img src="./apple-touch.webp" width="64" height="64" alt="Hira-Painting-Logo">
               </a>
             </div>
             <div class="hidden lg:flex flex-1 items-center justify-end gap-[82px]">
@@ -113,13 +108,13 @@
 
                 <div class="flex items-center space-x-2 text-primary">
                   <a href="#" aria-label="LinkedIn" rel="noopener noreferrer">
-                    <img src="./assets/icons/linkedin.svg" alt="LinkedIn">
+                    <img width="24" height="24" src="./assets/icons/linkedin.svg" alt="LinkedIn">
                   </a>
                   <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/icons/fb.svg" alt="Facebook">
+                    <img  width="24" height="24" src="./assets/icons/fb.svg" alt="Facebook">
                   </a>
                   <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/icons/instagram.svg" alt="Instagram">
+                    <img  width="24" height="24" src="./assets/icons/instagram.svg" alt="Instagram">
                   </a>
                 </div>
 
@@ -148,13 +143,13 @@
                     <a href="tel:6479753077" class="font-bold text-main mt-[18px]">647-975-3077</a>
                     <div class="flex items-center space-x-2 text-primary">
                       <a href="#" aria-label="LinkedIn" rel="noopener noreferrer">
-                        <img src="./assets/icons/linkedin.svg" alt="LinkedIn">
+                        <img  width="24" height="24" src="./assets/icons/linkedin.svg" alt="LinkedIn">
                       </a>
                       <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/icons/fb.svg" alt="Facebook">
+                        <img   width="24" height="24"src="./assets/icons/fb.svg" alt="Facebook">
                       </a>
                       <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/icons/instagram.svg" alt="Instagram">
+                        <img  width="24" height="24" src="./assets/icons/instagram.svg" alt="Instagram">
                       </a>
                     </div>
                     <a aria-label="Get a free painting quote" href="./order.html"
@@ -294,7 +289,7 @@
         <div class="mb-16 lg:mb-[100px]   grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 ">
           <article class="service-card">
             <div class="h-[100px] w-[100px] lg:w-[120px] lg:h-[120px] rounded-full">
-              <img src="./assets/images/interior-house.webp" alt="Interior painting service icon"
+              <img width="100" height="100" src="./assets/images/interior-house.webp" alt="Interior painting service icon"
                 class="w-full h-full rounded-full" loading="lazy">
             </div>
             <h3 class="text-center text-[32px] leading-[40px] font-medium text-main mb-5">
@@ -310,8 +305,8 @@
           </article>
           <article class="service-card">
             <div class="h-[100px] w-[100px] lg:w-[120px] lg:h-[120px] rounded-full">
-              <img src="./assets/images/commercial-painting.webp" alt="Commercial painting service icon" width="100%"
-                height="100%" class="w-full h-full rounded-full" loading="lazy">
+              <img width="100" height="100" src="./assets/images/commercial-painting.webp" alt="Commercial painting service icon" 
+               class="w-full h-full rounded-full" loading="lazy">
 
             </div>
             <h3 class="text-center text-[32px] leading-[40px] font-medium text-main mb-5">
@@ -327,8 +322,8 @@
           </article>
           <article class="service-card">
             <div class="h-[100px] w-[100px] lg:w-[120px] lg:h-[120px] rounded-full">
-              <img src="./assets/images/exterior-house.webp" alt="Exterior House painting service icon" width="100%"
-                height="100%" class="w-full h-full rounded-full" loading="lazy">
+              <img src="./assets/images/exterior-house.webp" alt="Exterior House painting service icon" width="100"
+                height="100" class="w-full h-full rounded-full" loading="lazy">
 
             </div>
             <h3 class="text-center text-[32px] leading-[40px] font-medium text-main mb-5">
@@ -362,7 +357,7 @@
                 class="bg-white text-black font-bold rounded-full w-10 h-10 flex items-center justify-center text-[32px] leading-10">
                 1
               </div>
-              <img src="./assets/icons/yellow-arrow.svg" alt="Yellow Arrow" aria-hidden="true">
+              <img width="114" height="84" src="./assets/icons/yellow-arrow.svg" alt="Yellow Arrow" aria-hidden="true">
             </div>
             <h3 class="text-2xl leading-8 md:text-[32px] md:leading-10 font-bold text-center mt-2">
               Professional work
@@ -379,7 +374,7 @@
                 class="bg-white text-black font-bold rounded-full w-10 h-10 flex items-center justify-center text-[32px] leading-10">
                 2
               </div>
-              <img src="./assets/icons/yellow-arrow.svg" alt="Yellow Arrow" aria-hidden="true">
+              <img width="114" height="84" src="./assets/icons/yellow-arrow.svg" alt="Yellow Arrow" aria-hidden="true">
             </div>
             <h3 class="text-2xl leading-8 md:text-[32px] md:leading-10 font-bold text-center mt-2">
               Reliable & Fast
@@ -397,7 +392,7 @@
                 class="bg-white text-black font-bold rounded-full w-10 h-10 flex items-center justify-center text-[32px] leading-10">
                 3
               </div>
-              <img src="./assets/icons/yellow-arrow.svg" alt="Yellow Arrow" aria-hidden="true">
+              <img width="114" height="84" src="./assets/icons/yellow-arrow.svg" alt="Yellow Arrow" aria-hidden="true">
             </div>
             <h3 class="text-2xl leading-8 md:text-[32px] md:leading-10 font-bold text-center mt-2">
               100% Guarantee of
@@ -415,7 +410,7 @@
                 class="bg-white text-black font-bold rounded-full w-10 h-10 flex items-center justify-center text-[32px] leading-10">
                 4
               </div>
-              <img src="./assets/icons/yellow-arrow.svg" alt="Yellow Arrow" aria-hidden="true">
+              <img width="114" height="84" src="./assets/icons/yellow-arrow.svg" alt="Yellow Arrow" aria-hidden="true">
             </div>
             <h3 class="text-2xl leading-8 md:text-[32px] md:leading-10 font-bold text-center mt-2">
               Competitive
@@ -437,48 +432,48 @@
         <h2 class="text-white mb-6 md:mb-16 lg:mb-[100px]">Recent Painting Projects by Hira Painting</h2>
         <div class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           <div class="aspect-[4/3] overflow-hidden">
-            <img src="./assets/images/projects/project-1.webp" alt="Living room with fresh painting "
+            <img width="366" height="360" src="./assets/images/projects/project-1.webp" alt="Living room with fresh painting "
               class="w-full h-full max-h-[360px] object-cover rounded-t-[64px] lg:rounded-tr-none" />
           </div>
 
 
           <figure class="aspect-[4/3] overflow-hidden">
-            <img src="./assets/images/projects/project-2.webp" alt="Modern interior wall paint "
+            <img  src="./assets/images/projects/project-2.webp" alt="Modern interior wall paint "
               class="max-h-[360px] object-cover  md:rounded-t-[64px] lg:rounded-t-none" width="100%" height="100%" />
 
           </figure>
           <figure class="aspect-[4/3] overflow-hidden">
-            <img src="./assets/images/projects/project-3.webp" alt="Kitchen area painted in neutral tones "
+            <img width="366" height="360" src="./assets/images/projects/project-3.webp" alt="Kitchen area painted in neutral tones "
               class="w-full h-full max-h-[360px] object-cover rounded-tr-none  lg:rounded-tr-[64px]" />
 
           </figure>
           <figure class="aspect-[4/3] overflow-hidden">
-            <img src="./assets/images/projects/project-4.webp" alt="Hallway painted in light grey "
+            <img width="366" height="360" src="./assets/images/projects/project-4.webp" alt="Hallway painted in light grey "
               class="w-full h-full max-h-[360px] object-cover  rounded-b-[64px]  md:rounded-b-none" />
 
           </figure>
           <figure class="aspect-[4/3] hidden md:block">
-            <img src="./assets/images/projects/project-5.webp" alt="Bedroom with large window painted freshly "
+            <img width="366" height="360" src="./assets/images/projects/project-5.webp" alt="Bedroom with large window painted freshly "
               class="w-full h-full max-h-[360px] object-cover " />
 
           </figure>
           <figure class="aspect-[4/3] hidden md:block">
-            <img src="./assets/images/projects/project-6.webp" alt="Interior detail with warm lighting "
+            <img width="366" height="360" src="./assets/images/projects/project-6.webp" alt="Interior detail with warm lighting "
               class="w-full h-full max-h-[360px] object-cover " />
 
           </figure>
           <figure class="aspect-[4/3] hidden md:block">
-            <img src="./assets/images/projects/project-7.webp" alt="Grey painted interior wall "
+            <img width="366" height="360" src="./assets/images/projects/project-7.webp" alt="Grey painted interior wall "
               class="w-full h-full max-h-[360px] object-cover " />
 
           </figure>
           <figure class="aspect-[4/3] hidden md:block">
-            <img src="./assets/images/projects/project-8.webp" alt="Staircase wall freshly painted "
+            <img width="366" height="360" src="./assets/images/projects/project-8.webp" alt="Staircase wall freshly painted "
               class="w-full h-full max-h-[360px] object-cover   " />
 
           </figure>
           <figure class="aspect-[4/3] hidden lg:block">
-            <img src="./assets/images/projects/project-9.webp" alt="Ceiling and wall paint in open concept room "
+            <img width="366" height="360" src="./assets/images/projects/project-9.webp" alt="Ceiling and wall paint in open concept room "
               class="w-full h-full max-h-[360px] object-cover " />
 
           </figure>
@@ -497,21 +492,21 @@
             <span>CLIENTS SAY?</span>
           </h2>
           <div class="absolute -bottom-[70px] -right-[70px] h-[110px] lg:hidden ">
-            <img src="./assets/icons/client-mob-arrow.svg" class=" h-[110px]" alt="">
+            <img src="./assets/icons/client-mob-arrow.svg" class=" h-[110px]" alt="mpbile-yellow-arrow" aria-hidden="true" height="110" width="100">
           </div>
         </div>
 
 
         <div class="flex">
           <div class=" hidden lg:block lg:min-w-[182px] ">
-            <img src="./assets/icons/client-desk-arrow.svg" alt="Left decorative arrow"
+            <img width="309" height="309" src="./assets/icons/client-desk-arrow.svg" alt="Left decorative arrow"
               class="block min-w-[182px] -mt-[38px] -ml-[45px] ">
           </div>
           <div class="relative grid grid-rows-1  lg:grid-cols-2 gap-4 lg:gap-6 mt-[70px] lg:mt-[54px] lg:-ml-[80px]">
             <article class=" p-6 bg-black rounded-[64px] text-white">
               <div class="flex items-center gap-[27px] mb-5 md:mb-6 lg:mb-4">
                 <figure class="w-[52px] h-[52px] md:w-[80px] md:h-[80px] rounded-full overflow-hidden bg-white">
-                  <img src="./assets/images/clinet-1.webp" alt="Photo of Rivka Keinan" loading="lazy"
+                  <img  src="./assets/images/clinet-1.webp" alt="Photo of Rivka Keinan" loading="lazy"
                     class="rounded-full" width="100%" height="100%">
 
                 </figure>
@@ -543,7 +538,7 @@
               </p>
             </article>
             <img class="hidden lg:block absolute left-[calc(50%_-_20px)] top-[calc(50%_-_90px)]"
-              src="./assets/icons/client-star.svg" width="39px" height="24px" alt="" aria-hidden="true">
+              src="./assets/icons/client-star.svg" width="39" height="24" alt="" aria-hidden="true">
 
 
 
@@ -564,7 +559,7 @@
                   with their work. And all was within the mutually agreed budget ! We can't thank them enough.
                 </p>
               </div>
-              <img src="./assets/icons/client-star.svg" alt="" aria-hidden="true" class="hidden self-start lg:block  ">
+              <img src="./assets/icons/client-star.svg"  alt="" aria-hidden="true" class="hidden self-start lg:block  ">
             </article>
 
 
@@ -591,7 +586,7 @@
       <div class="  flex flex-row items-center justify-between gap-2 md:gap-6">
 
         <div class="w-full max-w-1/2 md:max-w-[300px] lg:max-w-[421px] rounded-[64px] overflow-hidden">
-          <img src="./assets/images/footer.webp" alt="Project Image" class="w-full h-auto object-cover" />
+          <img src="./assets/images/footer.webp" width="421" height="100" alt="Project Image" class="w-full h-auto object-cover" />
         </div>
 
 
