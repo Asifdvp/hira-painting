@@ -458,6 +458,16 @@
       </div>
     </footer>
     <script src="./js/main.js" type="module"></script>
-    <script src="./js/order.js" type="module"></script>
+  <script>
+    flatpickr("#date", {
+  dateFormat: "Y-m-d",
+});
+flatpickr("#customTime", {
+  enableTime: true,
+  noCalendar: true,
+  dateFormat: "H:i",
+  time_24hr: true,
+});
+  </script>
   </body>
 </html>
