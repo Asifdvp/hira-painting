@@ -71,6 +71,18 @@
 
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        flatpickr("#date", { dateFormat: "Y-m-d" });
+        flatpickr("#customTime", {
+          enableTime: true,
+          noCalendar: true,
+          dateFormat: "H:i",
+          time_24hr: true,
+        });
+      });
+    </script>
+
     <style>
       input[type="date"]::-webkit-calendar-picker-indicator {
         display: none;
@@ -242,7 +254,7 @@
         </div>
         <div class="mb-10 md:mb-12 max-w-[545px]">
           <h1
-            class=" font-inter mb-4 text-2xl leading-8 text-black font-bold md:text-[32px] md:leading-10"
+            class="font-inter mb-4 text-2xl leading-8 text-black font-bold md:text-[32px] md:leading-10"
           >
             Schedule you service
           </h1>
@@ -299,7 +311,7 @@
                 <div class="relative">
                   <input
                     name="date"
-                    id="date"
+                    id="customDate"
                     type="text"
                     placeholder="Select date"
                     class="order-input focus:outline-none"
@@ -458,16 +470,5 @@
       </div>
     </footer>
     <script src="./js/main.js" type="module"></script>
-  <script>
-    flatpickr("#date", {
-  dateFormat: "Y-m-d",
-});
-flatpickr("#customTime", {
-  enableTime: true,
-  noCalendar: true,
-  dateFormat: "H:i",
-  time_24hr: true,
-});
-  </script>
   </body>
 </html>
