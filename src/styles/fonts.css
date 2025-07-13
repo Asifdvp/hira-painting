@@ -16,7 +16,6 @@
    font-display: swap;
 }
 
-/* Inter Italic */
 @font-face {
   font-family: 'Inter';
   src: url('./assets/fonts/Inter_24pt-SemiBold.ttf') format('truetype');
