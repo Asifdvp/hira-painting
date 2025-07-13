@@ -73,12 +73,16 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        flatpickr("#customDate", { dateFormat: "Y-m-d" });
+        flatpickr("#customDate", {
+          dateFormat: "Y-m-d",
+          defaultDate: "today",
+          disableMobile: true,
+        });
         flatpickr("#customTime", {
           enableTime: true,
-          noCalendar: true,
-          dateFormat: "H:i",
-          time_24hr: true,
+          dateFormat: "Y-m-d H:i", 
+          time_24hr: true, 
+          disableMobile: true,
         });
       });
     </script>
@@ -310,14 +314,14 @@
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-12">
                 <div class="relative">
                   <input
-                    name="date"
+                    name="customDate"
                     id="customDate"
                     type="text"
                     placeholder="Select date"
-                    class="order-input focus:outline-none"
+                    class="order-input focus:outline-none pl-12"
                   />
                   <div
-                    class="absolute left-6 top-1/2 transform -translate-y-1/2"
+                    class="absolute left-6 top-1/2 transform -translate-y-1/2 pointer-events-none"
                   >
                     <img
                       src="./assets/icons/date.svg"
@@ -329,7 +333,7 @@
 
                 <div class="relative">
                   <input
-                    name="time"
+                    name="customTime"
                     id="customTime"
                     type="text"
                     placeholder="Select date"
